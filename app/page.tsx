@@ -5,6 +5,7 @@ import Link from 'next/link';
 // import styles from '@/app/ui/home.module.css';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
+import ClientComponent from './testComnents'
 // import { log } from 'console';
 // import { Button } from '@kdcloudjs/kdesign';
 // import { Button } from 'antd';
@@ -60,11 +61,8 @@ export default function Page() {
 					/>
 				</div>
 			</div>
-			<div>
-				{mockData.map((item, index) => {
-					return <div key={index}>{item}</div>;
-				})}
-			</div>
+			<ClientComponent></ClientComponent>
+
 		</main>
 	);
 }
